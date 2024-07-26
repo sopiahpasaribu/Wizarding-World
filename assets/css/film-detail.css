@@ -1,0 +1,105 @@
+            /* MAIN CONTENT */
+            
+            .film-detail {
+                padding: 30vh;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                color: aliceblue;
+                font-size: 15px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .title-wrapper {
+                margin-bottom: 2rem;
+            }
+            
+            .content-wrapper {
+                border: 3px solid rgb(0, 0, 0);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                width: 100%;
+                padding: 40px;
+                border-radius: 10px;
+            }
+            
+            #film-poster {
+                width: 30vw;
+                margin-right: 2rem;
+            }
+            
+            .text-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+            
+            .summary-wrapper {
+                margin-bottom: 10px;
+            }
+            
+            .wrapper-detail {
+                margin-bottom: 5px;
+            }
+            
+            .summary-wrapper p:first-child {
+                font-size: 1.25rem;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            /* RESPONSIVE */
+            
+            @media only screen and (max-width: 1024px) {
+                .film-detail {
+                    padding-top: 20vh;
+                    font-size: 12px;
+                }
+                .content-wrapper {
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 12px;
+                }
+                #film-poster {
+                    width: 30vw;
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                }
+                .text-wrapper {
+                    align-items: center;
+                    text-align: center;
+                }
+                #film-credits {
+                    list-style: none;
+                }
+            }
+            
+            @media only screen and (max-width: 672px) {
+                .film-detail {
+                    padding-top: 20vh;
+                }
+                .content-wrapper {
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 12px;
+                }
+                #film-poster {
+                    width: 30vw;
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                }
+                .text-wrapper {
+                    align-items: center;
+                    text-align: center;
+                }
+                #film-credits {
+                    list-style: none;
+                }
+                .content-wrapper {
+                    width: 50vw;
+                }
+            }

@@ -1,0 +1,85 @@
+.potion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 13%;
+}
+
+.potion {
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.potion .info {
+    padding-top: 20px;
+}
+
+.potion h1 {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0;
+    font-weight: bold;
+    color: #d2b224;
+    text-transform: uppercase;
+}
+
+.potion p {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.potion .characteristics,
+.potion .difficulty,
+.potion .effect,
+.potion .ingredients {
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #f3c564;
+}
+
+.potion:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.potion img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #1e1d1d;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .potion {
+        width: calc(50% - 40px);
+    }
+    .potion img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .potion {
+        width: 100%;
+        margin: 10px;
+    }
+    .potion img {
+        width: 50px;
+        height: 50px;
+    }
+}

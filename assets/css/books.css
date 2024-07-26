@@ -1,0 +1,229 @@
+.card {
+    width: 14rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: glow 2s infinite alternate;
+    background-color: aliceblue;
+}
+
+.card:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 4px 12px rgba(255, 166, 0, 0.3);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.625rem;
+}
+
+.card h2 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1rem;
+    transition: color 0.3s;
+    color: black;
+}
+
+.book {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    text-align: center;
+}
+
+.description {
+    font-size: 15px;
+    color: #fffbfb;
+    margin-top: 5%;
+}
+
+.book-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+main {
+    padding: 170px;
+}
+
+
+/* DEATAIL BOOKS */
+
+.book-detail img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.book-detail-content {
+    flex: 1;
+    margin: 90px;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.book-detail-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.book-detail-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.book-detail-content a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #d1a94d;
+}
+
+.book-detail-content a:hover {
+    color: #337ab7;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1536px) {
+    .book-detail {
+        padding: 20px;
+    }
+    .book-detail img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .book-detail {
+        padding: 20px;
+    }
+    .book-detail img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .book-detail {
+        padding: 25px;
+    }
+    .book-detail img {
+        width: 30%;
+    }
+    .book-detail-content {
+        margin: 30px;
+    }
+    .book-detail-content h2 {
+        font-size: 18px;
+    }
+    .book-detail-content p,
+    .book-detail-content a {
+        font-size: 14px;
+    }
+    .book-detail {
+        width: 100%;
+    }
+}
+
+@media (max-width: 888px) {
+    .book-detail {
+        padding: 20px;
+    }
+    .book-detail img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 10rem;
+    }
+    .book {
+        gap: 2rem;
+    }
+    .book-detail {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .book-detail img {
+        width: 150px;
+    }
+    .book-detail-content {
+        margin: 20px;
+    }
+    .book-detail-content h2 {
+        font-size: 16px;
+    }
+    .book-detail-content p,
+    .book-detail-content a {
+        font-size: 12px;
+    }
+    main {
+        padding: 90px;
+    }
+}
+
+@media (max-width: 514px) {
+    .book-detail {
+        width: 30vh;
+    }
+    .book-detail img {
+        width: 100%;
+    }
+    .book-detail-content h2 {
+        font-size: 16px;
+    }
+    .book-detail-content p,
+    .book-detail-content a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 8rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    .book {
+        gap: 1rem;
+    }
+    .book-detail img {
+        width: 100px;
+    }
+    .book-detail-content {
+        margin: 10px;
+    }
+    .book-detail-content h2 {
+        font-size: 14px;
+    }
+    .book-detail-content p,
+    .book-detail-content a {
+        font-size: 10px;
+    }
+    main {
+        padding: 70px;
+    }
+}
+
+@media (max-width: 200px) {
+    main {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 162px) {
+    main {
+        padding: 20px;
+    }
+}
