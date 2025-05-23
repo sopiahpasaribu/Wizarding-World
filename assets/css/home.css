@@ -998,3 +998,200 @@
                 margin: 0px;
             }
         }
+
+
+        /* Additional Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+    /* Potions container adjustments */
+    .potions-container {
+        padding: 1rem;
+        margin-top: 5%;
+    }
+    
+    .potion-image {
+        width: 80%;
+        margin-top: 5%;
+    }
+    
+    .potion-button {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .deskripsi1 {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .book-image1, 
+    .book-image2, 
+    .book-image3 {
+        width: 80%;
+        margin: 10px 0;
+    }
+    
+    .video-container video,
+    .trailer video {
+        width: 90%;
+    }
+    
+    .footer-col {
+        flex-basis: 50%;
+        padding: 15px;
+    }
+    
+    .footer-logo {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .potions-container {
+        margin-top: 15%;
+    }
+    
+    .potion-content {
+        flex-direction: column;
+    }
+    
+    .potion-image-container {
+        margin-bottom: 20px;
+    }
+    
+    .discover-title {
+        margin-top: 15%;
+        font-size: 18px;
+    }
+    
+    .footer-col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+        margin: 10% 0;
+    }
+    
+    .footer-col h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /* Extra small devices */
+    .potion-button {
+        font-size: 8px;
+        padding: 0.5rem;
+    }
+    
+    .discover-title {
+        font-size: 16px;
+    }
+    
+    .book-image1, 
+    .book-image2, 
+    .book-image3 {
+        width: 95%;
+    }
+}
+
+/* Mobile Responsive Improvements (under 600px) */
+@media only screen and (max-width: 600px) {
+    /* Potions Section */
+    .potions-container {
+        padding: 1rem;
+        margin: 15% 5% 5% 5%;
+    }
+    
+    .potion-content {
+        flex-direction: column;
+    }
+    
+    .potion-image {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .potion-button {
+        width: 100%;
+        margin-left: 0;
+        padding: 0.8rem;
+        font-size: 12px;
+    }
+    
+    .bubbles {
+        display: none; 
+    }
+    
+    /* Discover Section */
+    .deskripsi1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .book-image1, 
+    .book-image2, 
+    .book-image3 {
+        width: 90%;
+        margin: 10px 0;
+    }
+    
+    /* Videos */
+    .video-container video,
+    .trailer video {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Footer */
+    .footer-row {
+        flex-direction: column;
+    }
+    
+    .footer-col {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+    .social-links {
+        justify-content: center;
+        margin: 15px 0;
+    }
+    
+    .footer-col h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    /* Navigation Logo */
+    .logoww img {
+        width: 30%;
+    }
+}
+
+/* Extra Small Devices (under 400px) */
+@media only screen and (max-width: 400px) {
+    .potion-button {
+        font-size: 10px;
+    }
+    
+    .discover-title {
+        font-size: 16px;
+    }
+    
+    .book-image1, 
+    .book-image2, 
+    .book-image3 {
+        width: 95%;
+    }
+    
+    .potion-glow {
+        display: none;
+    }
+}
