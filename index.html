@@ -139,54 +139,95 @@
                     </p>
                 </div>
             </div>
-            <form action="../../pages/books/index.html" method="get">
+            <form action="./book.html" method="get">
                 <div class="button_buku">
                     <button type="submit">START THE MAGIC TODAY</button>
                 </div>
             </form>
+    
 
-            <!-- POTIONS -->
-            <div class="potionss">
-                <div class="judul">
-                    <H3><img src="../../assets/images/logo hp.jpg">Harry Potter</H3>
-                    <h4> Potions</h4>
-                </div>
-                <div class="imgpotions">
-                    <img src="../../assets/images/potions.jpg" alt="potion img">
-                    <div class="caption">
-                        <p>Potions are magical concoctions...</p>
-                        <p>that can grant various benefits...</p>
-                        <p>to those who drink them.</p>
-                        <form action="../../pages/potions/index.html" method="get">
-                            <div class="button_buku">
-                                <p><button> VIEW POTIONS</button></p>
-                            </div>
-                        </form>
-                    </div>
+            <!-- POTIONS SECTION -->
+<div class="potions-container">
+    <div class="potion-header">
+        <div class="judul">
+            <h3><img src="../../assets/images/logo hp.jpg" alt="Harry Potter Logo">Harry Potter</h3>
+            <h4>Potions</h4>
+        </div>
+    </div>
+
+    <div class="potion-content">
+        <div class="potion-image-container">
+            <img src="../../assets/images/potions.jpg" alt="Magical Potions" class="potion-image">
+            <div class="potion-glow"></div>
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+        </div>
+
+        <div class="potion-info">
+            <div class="potion-description">
+                <p>Potions are magical concoctions...</p>
+                <p>that can grant various benefits...</p>
+                <p>to those who drink them.</p>
+                
+                <div class="ingredients">
+                    <h4>Common Ingredients:</h4>
+                    <ul class="ingredients-list">
+                        <li>Mandrake Root</li>
+                        <li>Dragon Blood</li>
+                        <li>Moonstone Powder</li>
+                        <li>Phoenix Tears</li>
+                    </ul>
                 </div>
             </div>
 
+            <form action="./potion.html" method="get">
+                <button class="potion-button">
+                    <span class="button-text">VIEW POTIONS</span>
+                    <span class="button-icon">🧪</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+            
             <!-- FILM -->
             <div class="films">
                 <div class="judul">
                     <H3><img src="../../assets/images/logo hp.jpg">Harry Potter</H3>
                     <h4> Films</h4>
                 </div>
-                <section clas="film">
+                <section class="film">
                     <div class="video1">
                         <div class="trailer">
+                            <video controls>
+                                <source src="../../assets/video/trailer movie.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                        <video controls autoplay loop muted>
-                            <source src="../../assets/video/trailer movie.mp4" type="video/mp4">
-                            
-                        </div>
-                        <form action="../../pages/film/index.html" method="get">
-                        <div class="button_buku">
-                            <button>VIEW MOVIES</button>
-                        </div> 
-                    </form>
+                        <form action="./film.html" method="get">
+                            <div class="button_buku">
+                                <button type="submit">VIEW MOVIES</button>
+                            </div> 
+                        </form>
+                    </div>
                 </section>
 
+
+                
             <!-- DISCOVER -->
                 <section class="discover">
                     <h3 class="discover-title">Discover The Wizarding World</h3>
@@ -226,11 +267,11 @@
                 <div class="footer-col">
                     <h3>Navigation</h3>
                     <ul>
-                        <li><a href="../../pages/home/index.html">Home</a></li>
-                        <li><a href="../../pages/about/index.html">About us</a></li>
-                        <li><a href="../../pages/books/index.html">Books</a></li>
-                        <li><a href="../../pages/film/index.html">Film</a></li>
-                        <li><a href="../../pages/potions/index.html">Potions</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="./book.html">Books</a></li>
+                        <li><a href="./film.html">Film</a></li>
+                        <li><a href="./potion.html">Potions</a></li>
 
                     </ul>
                 </div>
@@ -247,7 +288,8 @@
                     <h3>Sign In</h3>
                     <form class="footer-form">
                         <input type="email" placeholder="Your email address" required>
-                        <input type="date" placeholder="Your birthday" required>
+                        <input type="text" placeholder="Your password" required>
+
                         <button type="submit">Sign In</button>
                     </form>
                 </div>
