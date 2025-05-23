@@ -103,3 +103,53 @@
                     width: 50vw;
                 }
             }
+
+            
+/* Adjustments for very small screens */
+@media only screen and (max-width: 400px) {
+    .film-detail {
+        padding: 12vh 3vw 3vh;
+        font-size: 13px;
+    }
+    
+    .content-wrapper {
+        padding: 15px;
+        width: 95%;
+    }
+    
+    #film-poster {
+        width: 70vw;
+    }
+    
+    .summary-wrapper p:first-child {
+        font-size: 1rem;
+    }
+    
+    .button_buku button {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+/* Adjustments for landscape orientation */
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+    .film-detail {
+        padding: 10vh 5vw;
+    }
+    
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    #film-poster {
+        width: 30vw;
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+    
+    .text-wrapper {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
