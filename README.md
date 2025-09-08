@@ -22,4 +22,4 @@ Data diambil dari **[Potter DB API](https://potterdb.com/)**.
 - ⚡ **JavaScript (Fetch API)** → Mengambil data dari Potter DB API  
 
 
-# Buka file index.html di browser
+
